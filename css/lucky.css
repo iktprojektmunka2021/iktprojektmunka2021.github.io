@@ -18,13 +18,17 @@ body:not(#home), .modal-body{
 }
 
 #home .intro{
-    color: white;        
+    color: white;    
+    height: 100vh;    
 }
 
 #home .intro .col-md-8{
     background-color: rgba(0,0,0,0.4);    
 }
 
+.intro h1{
+    color: white;
+}
 /*Menü*/
 nav{
     background-color: #1f5b25; 
