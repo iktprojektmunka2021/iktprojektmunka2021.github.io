@@ -27,7 +27,24 @@ body:not(#home), .modal-body{
 
 /*Menü*/
 nav{
-    background-color: #1f5b25; 
+    background-color: #1f5b25;
+    padding: 15px;
+    position: fixed;
+    z-index: 5;
+}
+
+nav a{
+    color: white;
+    margin: 15px;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:first-child{
+    font-size: 1.5em;
 }
 
 nav a:first-child img{
@@ -41,13 +58,13 @@ nav a:first-child img{
     height: 400px;   
 }
 
-h1{
-    font-family: 'Fredericka the Great', cursive;
-    color: #1f5b25;
-    text-align: center;
+.navbar, .footer{
+    background-color:#1f5c25;
 }
 
-.card{
+/*Kártyák*/
+
+.kave{
     color: #1f5b25;
     background-color: #fff;
     border: 1px solid #1f5b25;
@@ -55,18 +72,21 @@ h1{
     margin-bottom: 1rem; 
 }
 
-.card:hover{
+.kave:hover{
     box-shadow: 0px 0px 5px #1f5b25;
 }
 
-h5{
+.kave h2{
+    font-size: 1rem;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-variant: small-caps;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a:hover{
-    text-decoration: none;
+.card{
+    height: 100%;
+    border: 1px solid #1f5c25;
 }
 
 #napiajanlat{
@@ -76,20 +96,46 @@ a:hover{
     top: 10px;
 }
 
+/*Lábléc*/
 .footer{
-    background-color: #1f5b25;
+    padding-top: 20px;
     color: white;
 }
 
-footer li{
+.footer ul{
     list-style-type: none;
+    margin-left: -25px;
 }
 
-footer li>img{
-    width: 15px;
-    margin-right: 10px;
+.footer img{
+    width: 16px;  
 }
 
-.modal-content{
-    background-color: #eadac0;
+/*Szövegformázások*/
+h1{
+    color:#1f5c25;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    margin: 20px auto;
+}
+
+p{
+    text-indent: 15px;
+}
+
+
+h5{
+    text-align: center;
+    font-variant: small-caps;
+    color: #1f5c25;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Linkek*/
+a:hover > .card{
+    box-shadow: 0px 0px 5px #1f5c25;    
+}
+
+a:hover{
+    text-decoration: none;
 }
