@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
-body, .modal-body{
+body{
     background-color: #fbefdb;
 }
 
 nav{
-    background-color: #1f5b25; 
+    background-color: #1f5b25;
+    padding: 15px;
+    position: fixed;
+    z-index: 5;
+}
+
+nav a{
+    color: white;
+    margin: 15px;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:first-child{
+    font-size: 1.5em;
 }
 
 nav a:first-child img{
@@ -25,7 +42,7 @@ h1{
     text-align: center;
 }
 
-.card{
+.kave{
     color: #1f5b25;
     background-color: #fff;
     border: 1px solid #1f5b25;
@@ -33,18 +50,16 @@ h1{
     margin-bottom: 1rem; 
 }
 
-.card:hover{
+.kave:hover{
     box-shadow: 0px 0px 5px #1f5b25;
 }
 
-h5{
+.kave h2{
+    font-size: 1rem;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-variant: small-caps;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a:hover{
-    text-decoration: none;
 }
 
 #napiajanlat{
@@ -66,8 +81,4 @@ footer li{
 footer li>img{
     width: 15px;
     margin-right: 10px;
-}
-
-.modal-content{
-    background-color: #eadac0;
 }
