@@ -117,3 +117,7 @@ p.szerzo {
     color: #fff;
     padding: .5rem;
 }
+
+.box span.badge {
+    margin: .25rem;
+}
